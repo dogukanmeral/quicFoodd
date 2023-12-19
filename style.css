@@ -66,7 +66,7 @@ p {
 }
 
 .header img {
-  padding: 5px;
+  padding: 7px;
 }
 
 #dropdown-button {
@@ -113,10 +113,12 @@ p {
 
 .ingredients-flexbox{
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
 .ingredients-flexbox p {
+  margin-top: 5px;
   width: 50%;
 }
 
@@ -124,6 +126,7 @@ p {
 .steps {
   display:block;
   width: 100%;
+  margin-bottom: 30px;
 }
 
 .title {
@@ -136,6 +139,54 @@ p {
   font-family: 'Kalam', cursive;
   font-size: 30px;
   margin-top: 30px;
+}
+
+.search-container {
+  width: 100%;
+  margin-left: 5%;
+  margin-top: 2%;
+}
+
+.search-box {
+  width: 60%;
+}
+
+.search-button {
+  width: 25%;
+}
+
+.sidebar-title {
+  font-family: 'Kalam', cursive;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+}
+
+.sidebar-container a {
+  text-decoration: underline;
+  font-family: 'Alegreya Sans', sans-serif;
+  margin-top: 6px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  width: 100%;
+  background-color: #221f1f;
+  align-items: center;
+}
+
+.footer p {
+  margin-right: 10px;
+  margin-left: 10px;
+  color: whitesmoke;
 }
 
 @media screen and (max-width: 750px) {
@@ -177,4 +228,8 @@ p {
   .title{
     text-align: center;
   }
+
+  .ingredients-flexbox{
+  flex-direction: row;
+}
 }
