@@ -18,6 +18,10 @@ p {
   padding: 7px;
 }
 
+#search-button {
+  display: none;
+}
+
 #dropdown-button {
   display: none;
 }
@@ -52,17 +56,18 @@ p {
 }
 
 .recipe-image {
-  width: 35%;
+  width: 50%;
+  margin: 2% auto;
 }
 
 .ingredients {
   width: 55%;
-  margin-left: 15px;
+  margin: 1% auto;
 }
 
 .ingredients-flexbox{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -74,8 +79,8 @@ p {
 
 .steps {
   display:block;
-  width: 100%;
-  margin-bottom: 30px;
+  width: 80%;
+  margin: 1% auto;
 }
 
 .title {
@@ -84,10 +89,16 @@ p {
   margin-top: 15px;
 }
 
-.subtitle {
+.step {
+  display: flex;
+  margin-top: 2%;
+  align-items: center;
+}
+
+.step-number {
   font-family: 'Kalam', cursive;
-  font-size: 30px;
-  margin-top: 30px;
+  font-size: 70px;
+  margin-right: 1%;
 }
 
 .search-container {
@@ -138,7 +149,19 @@ p {
   color: whitesmoke;
 }
 
+.prev-next-buttons {
+  height: 60px;
+  margin: 2% 5%; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 @media screen and (max-width: 750px) {
+  #search-button {
+    display: block;
+  }
+
   #dropdown-button {
     display: block;
   }
@@ -155,6 +178,11 @@ p {
     height: 60px;
   }
   
+  .prev-next-buttons {
+    height: 40px;
+    margin: 2% 1%;
+  }
+
   .left-side {
     display: none;
   }
@@ -180,4 +208,9 @@ p {
 
   .ingredients-flexbox{
     flex-direction: row;
+  }
+
+  .steps {
+    width: 100%;
+  }
 }
